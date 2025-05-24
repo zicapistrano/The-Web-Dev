@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get in Touch Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* White background */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f5deb3; /* Beige background for header */
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #333;
+      font-size: 2em;
+    }
+
+    nav {
+      background-color: #fff; /* White background for nav */
+      text-align: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      font-size: 1em;
+    }
+
+    .form-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .form-container {
+      background-color: white; /* White background for the form */
+      border-radius: 10px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #7b2cbf;
+      margin-bottom: 30px;
+      text-align: left;
+      font-size: 24px;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: #7b2cbf;
+      margin-top: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:first-child {
+      border: 2px solid orange;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      background: linear-gradient(to right, #e96443, #fcb045);
+      border: none;
+      border-radius: 30px;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #f76c6c, #ffb347);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Web Dev</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Gallery</a>
+  </nav>
+
+  <section class="form-section">
+    <div class="form-container">
+      <h2>The Web Dev Contact</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit →</button>
+      </form>
+    </div>
+  </section>
+
+<footer class="footer">
+    © 2024 The Web Dev. All rights reserved.
+  </footer>
+</body>
+</html>
